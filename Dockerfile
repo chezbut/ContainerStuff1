@@ -28,7 +28,6 @@ COPY supervisord_conf/* /etc/supervisor/conf.d/
 COPY supervisord_conf/* /etc/supervisor/conf.d/
 COPY nginx_conf/default /etc/nginx/sites-available/
 COPY nginx_conf/nginx.conf /etc/nginx/
-CMD ["supervisord", "-c", "/etc/supervisor/supervisord.conf"]
 COPY var_www_nginx_html/ /var/www/nginx/html 
 ENV TERM=screen
 
