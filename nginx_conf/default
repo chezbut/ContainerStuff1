@@ -1,0 +1,12 @@
+server {
+    #ssl on;
+    #ssl_certificate           /etc/nginx/cert.crt;
+    #ssl_certificate_key       /etc/nginx/cert.key;
+    listen 80;
+    #listen 443 ssl;
+    location / {
+        root   /var/www/nginx/html;
+        index  index.html index.htm;
+    }
+
+}
